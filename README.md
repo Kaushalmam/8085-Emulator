@@ -1,2 +1,7 @@
 # 8085-Emulator
-This code is successfully able to run 8085 assembly language codes and give the status of all types of registers in the memory, like flag register, general purpose register, etc.
+
+- This code was implemented to understand Assembly language codes written for 8085 simulator and produce, as output, the status of general purpose registers, special purpuse registers and flag register.
+- The 8085 processor has seven 8-bit registers accessible to the programmer, named A, B, C, D, E, H, and L, where A is also known as the accumulator. The other six registers can be used as independent byte-registers or as three 16-bit register pairs, BC, DE, and HL (or B, D, H, as referred to in Intel documents), depending on the particular instruction. 
+- Some instructions use HL as a (limited) 16-bit accumulator. The contents of the memory address pointed to by HL can be accessed as pseudo register M. 
+- It also has a 16-bit program counter and a 16-bit stack pointer to memory. Instructions such as PUSH PSW, POP PSW affect the Program Status Word (accumulator and flags). The accumulator stores the results of arithmetic and logical operations, and the flags register bits (sign, zero, auxiliary carry, parity, and carry flags) are set or cleared according to the results of these operations. 
+- The sign flag is set if the result has a negative sign (i.e. it is set if bit 7 of the accumulator is set). The auxiliary or half carry flag is set if a carry-over from bit 3 to bit 4 occurred. The parity flag is set according to the parity (odd or even) of the accumulator. The zero flag is set if the result of the operation was 0. Lastly, the carry flag is set if a carry-over from bit 7 of the accumulator (the MSB) occurred.
